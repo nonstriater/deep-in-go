@@ -25,15 +25,17 @@ func main()  {
 }
 
 func echoFunc(c net.Conn)  {
-	buf := make([]byte, 1024)
 
-	for   {
+	c.Write([]byte("hello kitty"))
+
+	buf := make([]byte, 1024)
+	for {
 		n, err := c.Read(buf) //读数据
 		if err != nil {
 			fmt.Println(err.Error())
 			continue
 		}
 
-		c.Write(buf[:n])
+		fmt.Println([]byte(buf[:n]))
 	}
 }
