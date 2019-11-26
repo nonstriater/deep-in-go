@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20116b09-8e00-4b42-98f2-970345367792" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/reflect_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/http2.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/http2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/interface.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/lock.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/lock.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/reflect_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reflect_test.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,18 +19,6 @@
         <option value="Go File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>NewEn</find>
-      <find>Encode</find>
-      <find>NewEncoder</find>
-      <find>mux.hosts</find>
-      <find>Handler</find>
-      <find>reqs</find>
-      <find>SetDeadline</find>
-      <find>rwc</find>
-    </findStrings>
   </component>
   <component name="GOROOT" path="/usr/local/Cellar/go/1.13.1/libexec" />
   <component name="Git.Settings">
@@ -62,25 +51,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.Test_struct in reflect_test.go">
-    <configuration name="go build reflect.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="deep in go" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/main/reflect.go" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Test_align in reflect_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="deep in go" />
-      <working_directory value="$PROJECT_DIR$/src/main" />
-      <framework value="gotest" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/src/main/reflect_test.go" />
-      <pattern value="^Test_align$" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Test.Test_bacis in reflect_test.go">
     <configuration name="Test_bacis in reflect_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="deep in go" />
       <working_directory value="$PROJECT_DIR$/src/main" />
@@ -91,40 +62,60 @@
       <pattern value="^Test_bacis$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_implements in reflect_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_value_addr in reflect_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="deep in go" />
       <working_directory value="$PROJECT_DIR$/src/main" />
       <framework value="gotest" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/src/main/reflect_test.go" />
-      <pattern value="^Test_implements$" />
+      <pattern value="^Test_value_addr$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_struct in reflect_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_value_get in reflect_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="deep in go" />
       <working_directory value="$PROJECT_DIR$/src/main" />
       <framework value="gotest" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/src/main/reflect_test.go" />
-      <pattern value="^Test_struct$" />
+      <pattern value="^Test_value_get$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_value_get_0 in reflect_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="deep in go" />
+      <working_directory value="$PROJECT_DIR$/src/main" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/src/main/reflect_test.go" />
+      <pattern value="^Test_value_get_0$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_value_set in reflect_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="deep in go" />
+      <working_directory value="$PROJECT_DIR$/src/main" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/src/main/reflect_test.go" />
+      <pattern value="^Test_value_set$" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build reflect.go" />
-      <item itemvalue="Go Test.Test_implements in reflect_test.go" />
+      <item itemvalue="Go Test.Test_value_addr in reflect_test.go" />
+      <item itemvalue="Go Test.Test_value_get in reflect_test.go" />
+      <item itemvalue="Go Test.Test_value_set in reflect_test.go" />
+      <item itemvalue="Go Test.Test_value_get_0 in reflect_test.go" />
       <item itemvalue="Go Test.Test_bacis in reflect_test.go" />
-      <item itemvalue="Go Test.Test_align in reflect_test.go" />
-      <item itemvalue="Go Test.Test_struct in reflect_test.go" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.Test_struct in reflect_test.go" />
-        <item itemvalue="Go Test.Test_align in reflect_test.go" />
         <item itemvalue="Go Test.Test_bacis in reflect_test.go" />
-        <item itemvalue="Go Test.Test_implements in reflect_test.go" />
-        <item itemvalue="Go Build.go build reflect.go" />
+        <item itemvalue="Go Test.Test_value_set in reflect_test.go" />
+        <item itemvalue="Go Test.Test_value_get_0 in reflect_test.go" />
+        <item itemvalue="Go Test.Test_value_get in reflect_test.go" />
+        <item itemvalue="Go Test.Test_value_addr in reflect_test.go" />
       </list>
     </recent_temporary>
   </component>
@@ -150,24 +141,34 @@
           <line>5</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/src/main/http2.go</url>
+          <url>file://$PROJECT_DIR$/src/main/http_server.go</url>
           <line>16</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/src/main/http2.go</url>
+          <url>file://$PROJECT_DIR$/src/main/http_server.go</url>
           <line>15</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/src/main/http2.go</url>
+          <url>file://$PROJECT_DIR$/src/main/http_server.go</url>
           <line>28</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/src/main/http2.go</url>
+          <url>file://$PROJECT_DIR$/src/main/http_server.go</url>
           <line>33</line>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/main/reflect_test.go</url>
+          <line>191</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/main/reflect_test.go</url>
+          <line>46</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

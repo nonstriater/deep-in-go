@@ -43,7 +43,7 @@ func main() {
 }
 
 func Test_bacis(t *testing.T)  {
-	str := "hello123"
+	str := "hello123567"
 	fmt.Println(reflect.TypeOf(str))
 	fmt.Println(reflect.ValueOf(str))
 
@@ -148,11 +148,74 @@ func Test_align(t *testing.T)  {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-func Test_value(t *testing.T)  {
+func Test_value_addr(t *testing.T)  {
 	f := foo{a:1, b:"hello"}
 	val := reflect.ValueOf(f)
-	fmt.Println(val.Align())//8
-	fmt.Println(typ.FieldAlign())//8
+	//fmt.Println(val.Addr())//crash
+	fmt.Println(val.CanAddr())//false
+
+	fo := &foo{a:1, b:"hello"}
+	val = reflect.ValueOf(fo)
+	//fmt.Println(val.Addr())//crash
+	fmt.Println(val.CanAddr())//false
+	fmt.Println(val.CanSet())//false
+
+	ofo := val.Elem()//解引用
+	fmt.Println(ofo.Addr())//&{1 hello}
+	fmt.Println(ofo.CanAddr())//true
+	fmt.Println(ofo.CanSet())//true
+
 }
+
+func Test_value_get_0(t *testing.T) {
+	f := foo{a:1, b:"hello"}
+	val := reflect.ValueOf(f)
+
+	fmt.Println(val.Field(1))//hello
+	fmt.Println(val.Field(0))//hello
+}
+
+func Test_value_get(t *testing.T) {
+	f := &foo{a:1, b:"hello"}
+	val := reflect.ValueOf(f)
+
+	fmt.Println(val.Elem())//{1 hello}
+	fmt.Println(val.Elem().Addr())//&{1 hello}
+	//fmt.Println(val.Field(1))//
+	//fmt.Println(val.Index(1))//第i个elem
+}
+
+func Test_value_set(t *testing.T) {
+
+	f := &foo{a:1, b:"hello"}
+	val := reflect.ValueOf(f)
+	fm := val.Elem()
+
+	a := fm.Field(0)
+	if a.CanSet() {
+		a.SetInt(22)
+	}
+
+	b := fm.Field(1)
+	b.SetString("kitty")
+	fmt.Println(fm)//{1 hello}
+
+	//fmt.Println(val.Field(1))//
+	//fmt.Println(val.Index(1))//第i个elem
+}
+
+func Test_value_call(t *testing.T){
+
+}
+
+func Test_value_interface(t *testing.T){
+
+}
+
+func Test_value_map(t *testing.T){
+
+}
+
+
 
 
