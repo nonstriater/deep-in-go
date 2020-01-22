@@ -11,6 +11,7 @@
       <change afterPath="$PROJECT_DIR$/src/main/http_server_nonblock.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/inherit.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/interface2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/interface3.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/pprof.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/struct.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/type.go" afterDir="false" />
