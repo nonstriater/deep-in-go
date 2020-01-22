@@ -12,6 +12,7 @@
 - channel  管道
 - lock  锁
 - waitgroup  协程同步：等待组
+- goroutine 协程
 - memroy  内存模型
 - gc  垃圾回收
 - reflect 反射
