@@ -216,6 +216,12 @@ func Test_value_map(t *testing.T){
 
 }
 
-
+//go test -gcflags=-N -benchmem -test.count=3 -test.cpu=1 -test.benchtime=1s
+func BenchmarkFunA(b *testing.B)  {
+	num:=10
+	for i:=0;i<b.N;i++{
+		fmt.Sprintf("%d",num)
+	}
+}
 
 

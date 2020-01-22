@@ -1,8 +1,8 @@
 package main
 
 import (
-	"net"
-	"fmt"
+"net"
+"fmt"
 )
 
 func main()  {
@@ -11,6 +11,8 @@ func main()  {
 		fmt.Println(err.Error())
 		return
 	}
+
+	fmt.Println("listen at 8888...")
 
 	for {
 		conn, err := lisener.Accept()//阻塞，获取来自客户端conn
@@ -24,18 +26,12 @@ func main()  {
 	}
 }
 
+//为什么有的时候会执行两遍？
 func echoFunc(c net.Conn)  {
+	fmt.Println("receive conn")
 
-	c.Write([]byte("hello kitty"))
+	//调用同步阻塞IO api
 
-	buf := make([]byte, 1024)
-	for {
-		n, err := c.Read(buf) //读数据
-		if err != nil {
-			fmt.Println(err.Error())
-			continue
-		}
 
-		fmt.Println([]byte(buf[:n]))
-	}
+
 }
