@@ -6,7 +6,8 @@
 - type  类型定义&类型别名
 - func   函数调用过程
 - struct   结构体
-- http   client/server
+- nil 零值处理
+- reflect 反射
 - inherit  "继承" 类型嵌入
 - interface  接口，泛型
 - channel  管道
@@ -15,7 +16,6 @@
 - goroutine 协程
 - memroy  内存模型
 - gc  垃圾回收
-- reflect 反射
 - pprof  性能
 - timer  定时器
-- nil 零值处理
+- http  网络模型 client/server
