@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20116b09-8e00-4b42-98f2-970345367792" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/nil.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/nil_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/slice.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/nil.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/nil.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,39 +51,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build interface3.go">
-    <configuration name="go build array.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="deep in go" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/main/array.go" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build defer2.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="deep in go" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/main/defer2.go" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build inherit.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="deep in go" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/main/inherit.go" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build interface2.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="deep in go" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/main/interface2.go" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Test.Test_nil_len in nil_test.go">
     <configuration name="go build interface3.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="deep in go" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -91,20 +60,58 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build nil.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="deep in go" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/src/main/nil.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_nil_address in nil_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="deep in go" />
+      <working_directory value="$PROJECT_DIR$/src/main" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/src/main/nil_test.go" />
+      <pattern value="^Test_nil_address$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_nil_campare in nil_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="deep in go" />
+      <working_directory value="$PROJECT_DIR$/src/main" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/src/main/nil_test.go" />
+      <pattern value="^Test_nil_campare$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_nil_len in nil_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="deep in go" />
+      <working_directory value="$PROJECT_DIR$/src/main" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/src/main/nil_test.go" />
+      <pattern value="^Test_nil_len$" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Go Build.go build array.go" />
-      <item itemvalue="Go Build.go build inherit.go" />
-      <item itemvalue="Go Build.go build interface2.go" />
-      <item itemvalue="Go Build.go build defer2.go" />
       <item itemvalue="Go Build.go build interface3.go" />
+      <item itemvalue="Go Build.go build nil.go" />
+      <item itemvalue="Go Test.Test_nil_campare in nil_test.go" />
+      <item itemvalue="Go Test.Test_nil_address in nil_test.go" />
+      <item itemvalue="Go Test.Test_nil_len in nil_test.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.Test_nil_len in nil_test.go" />
+        <item itemvalue="Go Test.Test_nil_address in nil_test.go" />
+        <item itemvalue="Go Test.Test_nil_campare in nil_test.go" />
+        <item itemvalue="Go Build.go build nil.go" />
         <item itemvalue="Go Build.go build interface3.go" />
-        <item itemvalue="Go Build.go build defer2.go" />
-        <item itemvalue="Go Build.go build interface2.go" />
-        <item itemvalue="Go Build.go build inherit.go" />
-        <item itemvalue="Go Build.go build array.go" />
       </list>
     </recent_temporary>
   </component>
@@ -127,10 +134,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/src/main/main.go</url>
-          <line>5</line>
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/src/main/reflect_test.go</url>
           <line>191</line>
