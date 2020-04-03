@@ -1,6 +1,7 @@
 # deep-in-go
 
 - array 容器
+- slice/map "引用类型"
 - const 常量
 - defer defer延迟
 - type  类型定义&类型别名
@@ -9,13 +10,14 @@
 - nil 零值处理
 - reflect 反射
 - inherit  "继承" 类型嵌入
-- interface  接口，泛型
+- interface  接口，泛型，鸭子类型，动态调用
 - channel  管道
-- lock  锁
+- lock 锁, Mutex/RWMutex/Once
 - waitgroup  协程同步：等待组
 - goroutine 协程
 - memroy  内存模型
 - gc  垃圾回收
 - pprof  性能
 - timer  定时器
+- for/range 循环遍历
 - http  网络模型 client/server
