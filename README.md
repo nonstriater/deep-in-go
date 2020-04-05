@@ -265,7 +265,7 @@ type I interface {
 }
 ```
 
-接口作为函数参数/返回值 时的函数调用过程？空的interface{} 有什么坑？
+接口作为函数参数/返回值 时的函数调用过程？空的interface{} 有什么坑？interface 实现原理是什么？
 
 ```go
 func main() {
@@ -284,11 +284,10 @@ func NilOrNot(v interface{}) {
 //output: non=nil
 ```
 
-interface 实现原理
 
 
-多态和动态调用还不太一样
 
+多态和动态调用还不太一样。
 
 
 
@@ -296,11 +295,10 @@ interface 实现原理
 
 介绍几个 nil 零值处理的坑
 
-- 指针，slice/map/channel, struct 类型的零值并不是 nil
+- 指针，slice/map/channel,function,interface 零值都是nil;  struct 类型的零值并不是 nil，对比的话编译报错
 - 值为nil的指针解引用会崩溃
-- `nil==nil` 不能比较，编译报错
+- `nil==nil` 不能比较，会编译报错
 - nil 标识符可以被覆盖，即可以这些写 `nil := 123`，但不要这样做
-
 
 
 ## reflect 反射
@@ -322,7 +320,7 @@ interface 实现原理
 ## lock 锁, Mutex/RWMutex/Once
 
 
-## waitgroup  协程同步：等待组
+## waitgroup 等待组 
 
 
 ## goroutine 协程
