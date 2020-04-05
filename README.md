@@ -40,12 +40,12 @@ arr2 := [...]int{1, 2, 3} //编译期间进行大小推断
 
 slice/map 属于"引用类型"，容器内的数据在运行时存储在堆上
 
-```` 
+```go
 slice := []int{1, 2, 3} //字面量初始化
 slice := make([]int, 10)
-````
-
 ```
+
+```go
 hash := map[string]int{
 	"a": 1,
 	"b": 2,
@@ -55,7 +55,18 @@ hash := map[string]int{
 
 ## for/range 循环遍历
 
-用来枚举 slice/map/channel
+`for .. range <容器>` 用来枚举 `数组/slice/map/channel` 容器结构
+
+```go
+func main() {
+	arr := []int{1, 2, 3}
+	for i, _ := range arr {
+		println(i)
+	}
+}
+```
+
+
 
 
 ## const 常量
@@ -163,9 +174,6 @@ func main()  {
 }
 ```
 
-## nil 零值处理
-
-
 
 ## func 函数调用过程
 
@@ -191,6 +199,9 @@ func startIPC(apis []string) {
 	fmt.Printf("%v", apis)
 }
 ```
+
+## nil 零值处理
+
 
 ## reflect 反射
 
