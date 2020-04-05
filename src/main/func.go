@@ -1,5 +1,9 @@
 package main
 
+import (
+	"golang.org/x/tools/go/ssa/interp/testdata/src/fmt"
+)
+
 func test(x int) (func(),func())  {
 	return func() {
 			println(x)
@@ -19,3 +23,16 @@ func main()  {
 100
 110
 */
+
+func getApis() []string {
+	var apis []string
+	apis = append(apis, "1")
+	apis = append(apis, "2")
+
+	return apis
+}
+
+func startIPC(apis []string) {
+	fmt.Printf("%v", apis)
+}
+
