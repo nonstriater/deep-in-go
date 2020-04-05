@@ -84,9 +84,67 @@ func main()  {
 
 ## defer延迟
 
+defer关键词是一个语法糖，需要编译器和运行时共同之处才能实现。
+
+主要用于操作必须要成对出现的场景，比如对象创建和释放，加锁和释放锁。
+释放资源的操作往往在用完之后容易忘记，造成资源泄露或资源不可再次获得；
+
+因此使用 defer 语句可以
+将资源的创建和释放代码写在一起，但是资源释放发生在函数
+
+函数中出现多个defer时，会逆序执行，因为在运行时是一个栈式结构； defer也可以嵌套，执行循序由外向内，
+这些都比较容易理解，但是当defer和局部变量和返回值等混在一起就不太容易搞明白
+
+```
+func main() {
+    func_b_0()
+    func_b_1()
+    func_b_2()
+}
+func func_b_0() {
+    fmt.Println("func_b_0...top")
+    a := 5
+    defer fmt.Println("a=", a)//打印值: 5, 原因: 在a := 5之后, 这句话就已经编译好, 只是放到最后才执行, 所以为5
+    a++
+}
+
+//defer 函数之后还有可能修改变量，造成defer函数中不确定性，应该避免这种写法
+func func_b_1() {
+    fmt.Println("func_b_1...top")
+    a := 5
+    defer func() {
+        fmt.Println("a=", a) //打印值: 6, 原因: 在a := 5之后 , 此句就已经编译好, 但没有执行, 放到最后才执行, 最后执行时才传入当时的参数6
+    }()
+    a++
+}
+
+func func_b_2() {
+    fmt.Println("func_b_2...top")
+    a := 5
+    defer func(a int) {
+        fmt.Println("a=", a)//打印值: 5, 原因: 在a := 5之后, 此句话就已经编译好, 并传入了当时的参数5, 只是放到了最后才执行
+    }(a)
+    a++
+}
+```
 
 
 ## panic/recover 异常处理
+
+recover() 必须在 defer 中调用， 当 panic 发生时，会编译本协程的defer链，如果defer中存在recover()语句就可以捕获panic
+
+```
+func defer_call2()  {
+   defer func() {
+      if ok := recover(); ok != nil {
+         fmt.Println("recover," + ok.(string))//recover 返回值就是 panic()传入的参数
+      }
+   }()
+   panic("error")
+}
+
+//recover,error
+```
 
 ## type  类型定义&类型别名
 
