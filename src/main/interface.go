@@ -21,7 +21,6 @@ func (o foo)talk(v interface{})  {
 }
 
 func (o foo)funcA()  {
-
 }
 
 func (o foo)funcB()  {

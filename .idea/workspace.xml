@@ -4,6 +4,9 @@
     <list default="true" id="20116b09-8e00-4b42-98f2-970345367792" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/inherit.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/inherit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/interface.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/interface2.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/interface2.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +45,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunManager" selected="Go Build.go build defer.go">
+  <component name="RunManager" selected="Go Build.go build interface2.go">
     <configuration name="go build defer.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="deep in go" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -59,6 +62,22 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build inherit.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="deep in go" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/src/main/inherit.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build interface2.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="deep in go" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/src/main/interface2.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build struct.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="deep in go" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -67,40 +86,20 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_nil_address in nil_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="deep in go" />
-      <working_directory value="$PROJECT_DIR$/src/main" />
-      <framework value="gotest" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/src/main/nil_test.go" />
-      <pattern value="^Test_nil_address$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Test_nil_len in nil_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="deep in go" />
-      <working_directory value="$PROJECT_DIR$/src/main" />
-      <framework value="gotest" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/src/main/nil_test.go" />
-      <pattern value="^Test_nil_len$" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Go Test.Test_nil_address in nil_test.go" />
-      <item itemvalue="Go Test.Test_nil_len in nil_test.go" />
       <item itemvalue="Go Build.go build struct.go" />
       <item itemvalue="Go Build.go build http.go" />
       <item itemvalue="Go Build.go build defer.go" />
+      <item itemvalue="Go Build.go build inherit.go" />
+      <item itemvalue="Go Build.go build interface2.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build interface2.go" />
+        <item itemvalue="Go Build.go build inherit.go" />
         <item itemvalue="Go Build.go build defer.go" />
         <item itemvalue="Go Build.go build http.go" />
         <item itemvalue="Go Build.go build struct.go" />
-        <item itemvalue="Go Test.Test_nil_len in nil_test.go" />
-        <item itemvalue="Go Test.Test_nil_address in nil_test.go" />
       </list>
     </recent_temporary>
   </component>
@@ -137,38 +136,38 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="440" y="203" key="#GOROOT/0.23.1680.1027@0.23.1680.1027" timestamp="1585900163227" />
-    <state width="1638" height="360" key="GridCell.Tab.0.bottom" timestamp="1586071554485">
+    <state width="1638" height="410" key="GridCell.Tab.0.bottom" timestamp="1586078499272">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="360" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1586071554485" />
-    <state width="1638" height="360" key="GridCell.Tab.0.center" timestamp="1586071554480">
+    <state width="1638" height="410" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1586078499272" />
+    <state width="1638" height="410" key="GridCell.Tab.0.center" timestamp="1586078499271">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="360" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1586071554480" />
-    <state width="1638" height="360" key="GridCell.Tab.0.left" timestamp="1586071554478">
+    <state width="1638" height="410" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1586078499271" />
+    <state width="1638" height="410" key="GridCell.Tab.0.left" timestamp="1586078499270">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="360" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1586071554478" />
-    <state width="1638" height="360" key="GridCell.Tab.0.right" timestamp="1586071554482">
+    <state width="1638" height="410" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1586078499270" />
+    <state width="1638" height="410" key="GridCell.Tab.0.right" timestamp="1586078499271">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="360" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1586071554482" />
-    <state width="1638" height="360" key="GridCell.Tab.1.bottom" timestamp="1586071554373">
+    <state width="1638" height="410" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1586078499271" />
+    <state width="1638" height="410" key="GridCell.Tab.1.bottom" timestamp="1586078499135">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="360" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1586071554373" />
-    <state width="1638" height="360" key="GridCell.Tab.1.center" timestamp="1586071554372">
+    <state width="1638" height="410" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1586078499135" />
+    <state width="1638" height="410" key="GridCell.Tab.1.center" timestamp="1586078499135">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="360" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1586071554372" />
-    <state width="1638" height="360" key="GridCell.Tab.1.left" timestamp="1586071554372">
+    <state width="1638" height="410" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1586078499135" />
+    <state width="1638" height="410" key="GridCell.Tab.1.left" timestamp="1586078499134">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="360" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1586071554372" />
-    <state width="1638" height="360" key="GridCell.Tab.1.right" timestamp="1586071554373">
+    <state width="1638" height="410" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1586078499134" />
+    <state width="1638" height="410" key="GridCell.Tab.1.right" timestamp="1586078499135">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="360" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1586071554373" />
+    <state width="1638" height="410" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1586078499135" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -185,7 +184,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/src/main/interface.go</url>
-          <line>48</line>
+          <line>47</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">

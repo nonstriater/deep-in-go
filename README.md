@@ -55,7 +55,7 @@ hash := map[string]int{
 
 ## for/range 循环遍历
 
-`for .. range <容器>` 用来枚举 `数组/slice/map/channel` 容器结构
+`for .. range <容器>` 用来枚举 `数组/slice/map/channel` 容器结构; 如下：
 
 ```go
 func main() {
@@ -66,16 +66,46 @@ func main() {
 }
 ```
 
+这里主要介绍下容易踩的坑
 
+```go
+func pase_student() {
+	m := make(map[string]*student)
+	stus := []student{
+		{Name: "zhou", Age: 24},
+		{Name: "li", Age: 23},
+		{Name: "wang", Age: 22},
+		{Name: "ran", Age: 25},
+	}
+	for _, stu := range stus {
+		m[stu.Name] = &stu //for/range 里取地址 都是同一个地址值？为什么？总是最后一个元素的地址
+		fmt.Printf("%p,%v",&stu,stu)
+		fmt.Println()
+	}
+	fmt.Println(m)
+	fmt.Println(m["zhou"])
+	fmt.Println(m["li"])
+	fmt.Println(m["wang"])
+}
+
+/*
+0xc0000b0000
+0xc0000b0000
+0xc0000b0000
+map[li:0xc0000b0000 wang:0xc0000b0000 zhou:0xc0000b0000]
+&{wang 22}
+&{wang 22}
+&{wang 22}
+*/
+```
 
 
 ## const 常量
 
-iota 在 const 关键字出现时初始化为 0, const 中每新增一行常量声明将使 iota 计数一次.
+`iota` 关键字在 const 关键字出现时初始化为 0, const 中每新增一行常量声明将使 iota 计数一次.
 因此如下常量 `p = 4`
 
-```
-
+```go
 const (
    x = iota 
    y
@@ -106,7 +136,7 @@ defer关键词是一个语法糖，需要编译器和运行时共同之处才能
 函数中出现多个defer时，会逆序执行，因为在运行时是一个栈式结构； defer也可以嵌套，执行循序由外向内，
 这些都比较容易理解，但是当defer和局部变量和返回值等混在一起就不太容易搞明白
 
-```
+```go
 func main() {
     func_b_0()
     func_b_1()
@@ -129,6 +159,7 @@ func func_b_1() {
     a++
 }
 
+//如果defer函数中使用局部变量，最好使用这种方式
 func func_b_2() {
     fmt.Println("func_b_2...top")
     a := 5
@@ -157,7 +188,7 @@ func defer_call2()  {
 //recover,error
 ```
 
-## type  类型定义&类型别名
+## type 类型定义&类型别名
 
 - 类型定义： 定义一个新类型，与原类型(这里是int)是不同的两个类型，想要赋值的话，需要经过强制类型转换
 - 类型别名(type aliases): 与原类型完全一样，可以相互赋值， golang 1.9 引入， 引入背景用于大型项目重构
@@ -200,26 +231,102 @@ func startIPC(apis []string) {
 }
 ```
 
+
+## struct 结构体
+
+Go 中使用 struct 实现了面向对象编程，用 struct 封装一个类类型， 然后可以给类型定义自有的方法
+
+面向对象的语言主要在大型系统的设计上，有较好的代码组织结构关系(拆分好的模块以及之间的关系)，以及代码良好的复用性和灵活性；
+我们看一个语言是不是面向对象语言，看3个方面：
+
+- 封装性
+- 继承，主要为代码复用， Go 通过类型嵌入的方式实现
+- 多态，增强灵活性，通过 interface 接口实现
+
+## inherit  "继承" 类型嵌入, 与继承有哪些区别？
+
+```
+type People struct{}
+type Teacher struct {
+   People
+}
+```
+
+类型嵌入可以继承基类的变量和方法。但不支持重载方法实现多态
+
+
+## interface 接口，泛型，鸭子类型，动态调用
+
+```go
+type I interface {
+    Get() int
+}
+```
+
+接口作为函数参数/返回值 时的函数调用过程？
+空的interface{}
+
+```go
+func main() {
+   var b bar
+   NilOrNot(b)
+}
+
+func NilOrNot(v interface{}) {
+   if v == nil {
+      println("nil")
+   } else {
+      println("non-nil")
+   }
+}
+
+//output: non=nil
+```
+
+interface 实现原理
+
+
+
 ## nil 零值处理
 
 
 ## reflect 反射
 
-## struct 结构体
+很多框架都用到reflect 实现一些动态的功能，比如 gorm。
+反射具体使用参考 `reflect.Type` 和 `reflect.Value` 的 api
 
-## inherit  "继承" 类型嵌入, 与继承有哪些区别？
-## interface  接口，泛型，鸭子类型，动态调用
+简单介绍下反射的基本实现原理。
+
+
+
 ## channel  管道
-## select/case 
-## lock 锁, Mutex/RWMutex/Once
-## waitgroup  协程同步：等待组
-## goroutine 协程
-## memory 内存模型
-## gc 垃圾回收
-## pprof  性能
-## timer  定时器
-## http  网络模型 client/server
 
+
+## select/case 
+
+
+## lock 锁, Mutex/RWMutex/Once
+
+
+## waitgroup  协程同步：等待组
+
+
+## goroutine 协程
+
+
+## memory 内存模型
+
+
+## gc 垃圾回收
+
+
+## pprof  性能
+
+
+## timer  定时器
+
+
+## http  网络模型 client/server
 
 
 
