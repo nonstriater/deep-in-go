@@ -23,6 +23,7 @@
 - pprof  性能
 - timer  定时器
 - http  网络模型 client/server
+- Go 进程初始化过程
 
 对于每个部分，简单介绍下使用以及需要注意的一些坑。
 
@@ -313,6 +314,24 @@ func NilOrNot(v interface{}) {
 
 ## channel  管道
 
+chan 初始化和使用
+
+```go
+var channel chan int = make(chan int)
+//或
+channel := make(chan int)
+
+data :=  <- channel  //从 chan 读取数据
+channel <-   data   //数据写入 chan
+```
+
+chan 信道读取和发生都会造成阻塞  
+必须一个goroutine读，一个goroutine写； 在单一的信道里 读或者写 chan都会导致死锁
+
+
+- chan 作为函数参数/返回值
+
+
 
 ## select/case 
 
@@ -341,6 +360,7 @@ func NilOrNot(v interface{}) {
 ## http  网络模型 client/server
 
 
+## Go 进程初始化过程
 
 # 参考
 
