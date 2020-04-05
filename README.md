@@ -252,10 +252,12 @@ type Teacher struct {
 }
 ```
 
-类型嵌入可以继承基类的变量和方法。但不支持重载方法实现多态
+类型嵌入可以继承基类的变量和方法。但并不支持重载方法实现多态，因此实现多态就只有另一条路：interface接口
 
 
 ## interface 接口，泛型，鸭子类型，动态调用
+
+接口定义如下：
 
 ```go
 type I interface {
@@ -263,8 +265,7 @@ type I interface {
 }
 ```
 
-接口作为函数参数/返回值 时的函数调用过程？
-空的interface{}
+接口作为函数参数/返回值 时的函数调用过程？空的interface{} 有什么坑？
 
 ```go
 func main() {
@@ -286,13 +287,26 @@ func NilOrNot(v interface{}) {
 interface 实现原理
 
 
+多态和动态调用还不太一样
+
+
+
 
 ## nil 零值处理
+
+介绍几个 nil 零值处理的坑
+
+- 指针，slice/map/channel, struct 类型的零值并不是 nil
+- 值为nil的指针解引用会崩溃
+- `nil==nil` 不能比较，编译报错
+- nil 标识符可以被覆盖，即可以这些写 `nil := 123`，但不要这样做
+
 
 
 ## reflect 反射
 
 很多框架都用到reflect 实现一些动态的功能，比如 gorm。
+
 反射具体使用参考 `reflect.Type` 和 `reflect.Value` 的 api
 
 简单介绍下反射的基本实现原理。

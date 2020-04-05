@@ -4,9 +4,6 @@
     <list default="true" id="20116b09-8e00-4b42-98f2-970345367792" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/inherit.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/inherit.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/interface.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/interface2.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/interface2.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
