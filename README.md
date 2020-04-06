@@ -13,10 +13,10 @@
 - reflect 反射
 - inherit  "继承" 类型嵌入, 与继承有哪些区别？
 - interface  接口，泛型，鸭子类型，动态调用
-- channel  管道
+- chan 管道
 - select/case 
-- lock 锁, Mutex/RWMutex/Once
-- waitgroup  协程同步：等待组
+- 锁: Mutex/RWMutex/Once
+- WaitGroup 等待组 协程同步
 - goroutine 协程
 - memory 内存模型
 - gc 垃圾回收
@@ -312,7 +312,7 @@ func NilOrNot(v interface{}) {
 
 
 
-## channel  管道
+## chan 管道
 
 chan 信道是 goroutine 通讯的机制；
 
@@ -340,7 +340,7 @@ chan 信道读取和发生都会造成阻塞
 ## 锁: Mutex/RWMutex/Once
 
 
-## waitgroup 等待组 
+## WaitGroup 等待组 
 
 
 ## goroutine 协程
