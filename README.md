@@ -314,6 +314,10 @@ func NilOrNot(v interface{}) {
 
 ## channel  管道
 
+chan 信道是 goroutine 通讯的机制；
+
+类似一个消息队列，在这个队列写满的情况继续写就会阻塞当前goroutine，同理，空的情况下读 chan 信道 也会阻塞当前 goroutine, 这个也常被用来实现多协程场景下的协程同步。
+
 chan 初始化和使用
 
 ```go
@@ -329,14 +333,11 @@ chan 信道读取和发生都会造成阻塞
 必须一个goroutine读，一个goroutine写； 在单一的信道里 读或者写 chan都会导致死锁
 
 
-- chan 作为函数参数/返回值
-
-
-
 ## select/case 
 
+用来实现多个信道的等待操作，加一个default操作，可以实现非阻塞多路 `select`
 
-## lock 锁, Mutex/RWMutex/Once
+## 锁: Mutex/RWMutex/Once
 
 
 ## waitgroup 等待组 
@@ -361,6 +362,7 @@ chan 信道读取和发生都会造成阻塞
 
 
 ## Go 进程初始化过程
+
 
 # 参考
 
