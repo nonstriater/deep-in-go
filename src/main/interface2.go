@@ -13,5 +13,9 @@ func Foo(x interface{}) {
 func main() {
 	var x *int = nil
 	Foo(x)
+
+	//var s string = nil //nil不能赋值个string
+	var s string
+	Foo(s)
 }
 

@@ -5,8 +5,9 @@ import (
 )
 
 func main() {
-	//defer_call()
+	defer_call()
 	defer_call2()
+	defer_embed()
 
 	func_b_0()
 	func_b_1()
@@ -18,7 +19,16 @@ func defer_call() {
 	defer func() { fmt.Println("打印中") }()
 	defer func() { fmt.Println("打印后") }()
 
-	panic("触发异常")
+	//panic("触发异常")
+}
+
+func defer_embed()  {
+	defer func() {
+		fmt.Println("1")
+		defer func(){
+			fmt.Println("2")
+		}()
+	}()
 }
 
 func defer_call2()  {
