@@ -85,11 +85,11 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Go Build.go build channel.go" />
+      <item itemvalue="Go Build.go build gomaxprocs.go" />
       <item itemvalue="Go Build.go build inherit.go" />
       <item itemvalue="Go Build.go build interface2.go" />
       <item itemvalue="Go Build.go build select.go" />
-      <item itemvalue="Go Build.go build channel.go" />
-      <item itemvalue="Go Build.go build gomaxprocs.go" />
     </list>
     <recent_temporary>
       <list>

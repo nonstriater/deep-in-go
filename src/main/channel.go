@@ -28,4 +28,3 @@ func funA()  {
 func closeCh(){
 	close(ch)
 }
-
