@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20116b09-8e00-4b42-98f2-970345367792" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/nil_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/slice.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/chan2.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/nil.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/nil.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/channel.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/channel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/goroutine.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/goroutine.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/slice.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/slice.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +21,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="/usr/local/Cellar/go/1.13.1/libexec" />
+  <component name="GOROOT" path="/usr/local/Cellar/go/1.14/libexec" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -51,41 +52,37 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.Test_nil_len in nil_test.go">
-    <configuration name="go build interface3.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build goroutine.go">
+    <configuration name="go build chan2.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="deep in go" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/main/interface3.go" />
+      <filePath value="$PROJECT_DIR$/src/main/chan2.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build nil.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build goroutine.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="deep in go" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/main/nil.go" />
+      <filePath value="$PROJECT_DIR$/src/main/goroutine.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_nil_address in nil_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="go build http.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="deep in go" />
-      <working_directory value="$PROJECT_DIR$/src/main" />
-      <framework value="gotest" />
+      <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/src/main/http.go" />
       <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/src/main/nil_test.go" />
-      <pattern value="^Test_nil_address$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_nil_campare in nil_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="go build slice.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="deep in go" />
-      <working_directory value="$PROJECT_DIR$/src/main" />
-      <framework value="gotest" />
+      <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/src/main/slice.go" />
       <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/src/main/nil_test.go" />
-      <pattern value="^Test_nil_campare$" />
       <method v="2" />
     </configuration>
     <configuration name="Test_nil_len in nil_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -99,19 +96,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build interface3.go" />
-      <item itemvalue="Go Build.go build nil.go" />
-      <item itemvalue="Go Test.Test_nil_campare in nil_test.go" />
-      <item itemvalue="Go Test.Test_nil_address in nil_test.go" />
+      <item itemvalue="Go Build.go build http.go" />
+      <item itemvalue="Go Build.go build slice.go" />
       <item itemvalue="Go Test.Test_nil_len in nil_test.go" />
+      <item itemvalue="Go Build.go build goroutine.go" />
+      <item itemvalue="Go Build.go build chan2.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build goroutine.go" />
+        <item itemvalue="Go Build.go build chan2.go" />
+        <item itemvalue="Go Build.go build slice.go" />
+        <item itemvalue="Go Build.go build http.go" />
         <item itemvalue="Go Test.Test_nil_len in nil_test.go" />
-        <item itemvalue="Go Test.Test_nil_address in nil_test.go" />
-        <item itemvalue="Go Test.Test_nil_campare in nil_test.go" />
-        <item itemvalue="Go Build.go build nil.go" />
-        <item itemvalue="Go Build.go build interface3.go" />
       </list>
     </recent_temporary>
   </component>
@@ -148,6 +145,11 @@
           <url>file://$PROJECT_DIR$/src/main/interface.go</url>
           <line>48</line>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file:///usr/local/Cellar/go/1.14/libexec/src/net/http/server.go</url>
+          <line>2393</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

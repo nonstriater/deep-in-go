@@ -17,3 +17,6 @@ func funA()  {
 	println(a)
 
 }
+
+
+
