@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20116b09-8e00-4b42-98f2-970345367792" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/gomaxprocs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/channel.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/channel.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,20 +43,20 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunManager" selected="Go Build.go build select.go">
-    <configuration name="go build defer.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build gomaxprocs.go">
+    <configuration name="go build channel.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="deep in go" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/main/defer.go" />
+      <filePath value="$PROJECT_DIR$/src/main/channel.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build http.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build gomaxprocs.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="deep in go" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/main/http.go" />
+      <filePath value="$PROJECT_DIR$/src/main/gomaxprocs.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -83,19 +85,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build http.go" />
-      <item itemvalue="Go Build.go build defer.go" />
       <item itemvalue="Go Build.go build inherit.go" />
       <item itemvalue="Go Build.go build interface2.go" />
       <item itemvalue="Go Build.go build select.go" />
+      <item itemvalue="Go Build.go build channel.go" />
+      <item itemvalue="Go Build.go build gomaxprocs.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build gomaxprocs.go" />
+        <item itemvalue="Go Build.go build channel.go" />
         <item itemvalue="Go Build.go build select.go" />
         <item itemvalue="Go Build.go build interface2.go" />
         <item itemvalue="Go Build.go build inherit.go" />
-        <item itemvalue="Go Build.go build defer.go" />
-        <item itemvalue="Go Build.go build http.go" />
       </list>
     </recent_temporary>
   </component>
@@ -132,38 +134,38 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="440" y="203" key="#GOROOT/0.23.1680.1027@0.23.1680.1027" timestamp="1585900163227" />
-    <state width="1638" height="350" key="GridCell.Tab.0.bottom" timestamp="1586103145441">
+    <state width="1638" height="383" key="GridCell.Tab.0.bottom" timestamp="1587012694667">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="350" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1586103145441" />
-    <state width="1638" height="350" key="GridCell.Tab.0.center" timestamp="1586103145440">
+    <state width="1638" height="383" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1587012694667" />
+    <state width="1638" height="383" key="GridCell.Tab.0.center" timestamp="1587012694666">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="350" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1586103145440" />
-    <state width="1638" height="350" key="GridCell.Tab.0.left" timestamp="1586103145440">
+    <state width="1638" height="383" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1587012694666" />
+    <state width="1638" height="383" key="GridCell.Tab.0.left" timestamp="1587012694665">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="350" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1586103145440" />
-    <state width="1638" height="350" key="GridCell.Tab.0.right" timestamp="1586103145441">
+    <state width="1638" height="383" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1587012694665" />
+    <state width="1638" height="383" key="GridCell.Tab.0.right" timestamp="1587012694666">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="350" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1586103145441" />
-    <state width="1638" height="313" key="GridCell.Tab.1.bottom" timestamp="1586103129542">
+    <state width="1638" height="383" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1587012694666" />
+    <state width="1638" height="335" key="GridCell.Tab.1.bottom" timestamp="1587011262793">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="313" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1586103129542" />
-    <state width="1638" height="313" key="GridCell.Tab.1.center" timestamp="1586103129541">
+    <state width="1638" height="335" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1587011262793" />
+    <state width="1638" height="335" key="GridCell.Tab.1.center" timestamp="1587011262793">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="313" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1586103129541" />
-    <state width="1638" height="313" key="GridCell.Tab.1.left" timestamp="1586103129541">
+    <state width="1638" height="335" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1587011262793" />
+    <state width="1638" height="335" key="GridCell.Tab.1.left" timestamp="1587011262792">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="313" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1586103129541" />
-    <state width="1638" height="313" key="GridCell.Tab.1.right" timestamp="1586103129541">
+    <state width="1638" height="335" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1587011262792" />
+    <state width="1638" height="335" key="GridCell.Tab.1.right" timestamp="1587011262793">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="313" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1586103129541" />
+    <state width="1638" height="335" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1587011262793" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
