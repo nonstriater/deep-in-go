@@ -25,6 +25,30 @@
 - http  网络模型 client/server
 - Go 进程初始化过程
 
+
+学习一门语言，需要对每个特性：
+
+- demo 进行各种特性验证，有什么坑之类的； 
+- 为什么需要这个语法特性，语言设计者是如何考虑的？
+- 查看编译过程，了解语法特性的编译时过程
+- 查看运行过程，看看runtime对语法特征的支持
+
+查看编译过程方法 
+
+```
+go tool 6g -S hello.go  // -S  从源码直接生成汇编代码
+go tool compile -S -N -l main.go  //汇编代码
+```
+
+Goland IDE 上怎么查看汇编代码？
+
+
+
+查看运行时过程的方法 
+
+
+
+
 对于每个部分，简单介绍下使用以及需要注意的一些坑。
 
 ## array 数组
@@ -41,12 +65,12 @@ arr2 := [...]int{1, 2, 3} //编译期间进行大小推断
 
 slice/map 属于"引用类型"，容器内的数据在运行时存储在堆上
 
-```go
+```
 slice := []int{1, 2, 3} //字面量初始化
 slice := make([]int, 10)
 ```
 
-```go
+```
 hash := map[string]int{
 	"a": 1,
 	"b": 2,
@@ -58,7 +82,7 @@ hash := map[string]int{
 
 `for .. range <容器>` 用来枚举 `数组/slice/map/channel` 容器结构; 如下：
 
-```go
+```
 func main() {
 	arr := []int{1, 2, 3}
 	for i, _ := range arr {
@@ -69,7 +93,7 @@ func main() {
 
 这里主要介绍下容易踩的坑
 
-```go
+```
 func pase_student() {
 	m := make(map[string]*student)
 	stus := []student{
@@ -106,7 +130,7 @@ map[li:0xc0000b0000 wang:0xc0000b0000 zhou:0xc0000b0000]
 `iota` 关键字在 const 关键字出现时初始化为 0, const 中每新增一行常量声明将使 iota 计数一次.
 因此如下常量 `p = 4`
 
-```go
+```
 const (
    x = iota 
    y
@@ -137,7 +161,7 @@ defer关键词是一个语法糖，需要编译器和运行时共同之处才能
 函数中出现多个defer时，会逆序执行，因为在运行时是一个栈式结构； defer也可以嵌套，执行循序由外向内，
 这些都比较容易理解，但是当defer和局部变量和返回值等混在一起就不太容易搞明白
 
-```go
+```
 func main() {
     func_b_0()
     func_b_1()
@@ -260,7 +284,7 @@ type Teacher struct {
 
 接口定义如下：
 
-```go
+```
 type I interface {
     Get() int
 }
@@ -268,7 +292,7 @@ type I interface {
 
 接口作为函数参数/返回值 时的函数调用过程？空的interface{} 有什么坑？interface 实现原理是什么？
 
-```go
+```
 func main() {
    var b bar
    NilOrNot(b)
@@ -320,7 +344,7 @@ chan 信道是 goroutine 通讯的机制；
 
 chan 初始化和使用
 
-```go
+```
 var channel chan int = make(chan int)
 //或
 channel := make(chan int)
