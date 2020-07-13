@@ -12,7 +12,6 @@ func cal(a int , b int )  {
 }
 
 func main() {
-
 	runtime.GOMAXPROCS(1)
 
 	for i :=0 ; i<9 ;i++{
@@ -20,3 +19,15 @@ func main() {
 	}
 	time.Sleep(time.Second * 2) // sleep作用是为了等待所有任务完成
 }
+
+/*
+8 + 9 = 17  //为什么总是最后一个先执行呢？
+0 + 1 = 1
+1 + 2 = 3
+2 + 3 = 5
+3 + 4 = 7
+4 + 5 = 9
+5 + 6 = 11
+6 + 7 = 13
+7 + 8 = 15
+*/

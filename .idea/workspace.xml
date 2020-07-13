@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="20116b09-8e00-4b42-98f2-970345367792" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/chan2.go" afterDir="false" />
+    <list default="true" id="e694701d-7c66-4bfe-a007-242fe2711030" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/closure.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/channel.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/channel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/WaitGroup.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/WaitGroup.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/gomaxprocs.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/gomaxprocs.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/goroutine.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/goroutine.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/slice.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/slice.go" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,8 +28,14 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
@@ -39,25 +44,38 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Go Build.go build goroutine.go">
-    <configuration name="go build chan2.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build closure.go">
+    <configuration name="go build WaitGroup.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="deep in go" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/main/chan2.go" />
+      <filePath value="$PROJECT_DIR$/src/main/WaitGroup.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build channel.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="deep in go" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/src/main/channel.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build closure.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="deep in go" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/src/main/closure.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build gomaxprocs.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="deep in go" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/src/main/gomaxprocs.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -69,48 +87,34 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build http.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="deep in go" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/main/http.go" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build slice.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="deep in go" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/main/slice.go" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Test_nil_len in nil_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="deep in go" />
-      <working_directory value="$PROJECT_DIR$/src/main" />
-      <framework value="gotest" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/src/main/nil_test.go" />
-      <pattern value="^Test_nil_len$" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Go Build.go build http.go" />
-      <item itemvalue="Go Build.go build slice.go" />
-      <item itemvalue="Go Test.Test_nil_len in nil_test.go" />
+      <item itemvalue="Go Build.go build channel.go" />
+      <item itemvalue="Go Build.go build gomaxprocs.go" />
+      <item itemvalue="Go Build.go build WaitGroup.go" />
       <item itemvalue="Go Build.go build goroutine.go" />
-      <item itemvalue="Go Build.go build chan2.go" />
+      <item itemvalue="Go Build.go build closure.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build closure.go" />
         <item itemvalue="Go Build.go build goroutine.go" />
-        <item itemvalue="Go Build.go build chan2.go" />
-        <item itemvalue="Go Build.go build slice.go" />
-        <item itemvalue="Go Build.go build http.go" />
-        <item itemvalue="Go Test.Test_nil_len in nil_test.go" />
+        <item itemvalue="Go Build.go build WaitGroup.go" />
+        <item itemvalue="Go Build.go build gomaxprocs.go" />
+        <item itemvalue="Go Build.go build channel.go" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -128,6 +132,52 @@
       </map>
     </option>
   </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="203" key="#GOROOT" timestamp="1585900163227">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="440" y="203" key="#GOROOT/0.23.1680.1027@0.23.1680.1027" timestamp="1585900163227" />
+    <state width="1638" height="343" key="GridCell.Tab.0.bottom" timestamp="1587033495962">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="343" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1587033495962" />
+    <state width="1638" height="343" key="GridCell.Tab.0.center" timestamp="1587033495961">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="343" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1587033495961" />
+    <state width="1638" height="343" key="GridCell.Tab.0.left" timestamp="1587033495961">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="343" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1587033495961" />
+    <state width="1638" height="343" key="GridCell.Tab.0.right" timestamp="1587033495962">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="343" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1587033495962" />
+    <state width="1638" height="335" key="GridCell.Tab.1.bottom" timestamp="1587011262793">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="335" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1587011262793" />
+    <state width="1638" height="335" key="GridCell.Tab.1.center" timestamp="1587011262793">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="335" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1587011262793" />
+    <state width="1638" height="335" key="GridCell.Tab.1.left" timestamp="1587011262792">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="335" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1587011262792" />
+    <state width="1638" height="335" key="GridCell.Tab.1.right" timestamp="1587011262793">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="335" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1587011262793" />
+    <state x="341" y="175" key="SettingsEditor" timestamp="1587033492860">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1587033492860" />
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1587033499176">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1587033499176" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -143,13 +193,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/src/main/interface.go</url>
-          <line>48</line>
+          <line>47</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file:///usr/local/Cellar/go/1.14/libexec/src/net/http/server.go</url>
-          <line>2393</line>
-          <option name="timeStamp" value="23" />
+          <url>file://$PROJECT_DIR$/src/main/http.go</url>
+          <line>9</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
