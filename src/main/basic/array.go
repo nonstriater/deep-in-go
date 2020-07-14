@@ -6,6 +6,7 @@ func main() {
 	arr2()
 	arr3()
 	arr4()
+	arr5()
 }
 
 func arr1()  {
@@ -34,3 +35,13 @@ func arr4()  {
 	fmt.Println(end)
 }
 
+//[]byte 与 string 相互转换
+func arr5()  {
+	str := "helllo"//不可变
+	bytes := []byte(str) //string to []byte
+	println(bytes)
+
+	str2 := []byte{'a','b','c'}//可变
+	str3 := string(str2) //[]byte to string
+	println(str3)
+}
