@@ -10,7 +10,11 @@
 ## 创造型
 
 - 单例
-- 工厂
+- 简单工厂  factory/builder
+- 工程方法 factory method
+- 抽象工程 abstract factory
+- 原型模式 prototype
+
 
 ### 单例
 
@@ -70,18 +74,30 @@ func GetInstance() *singleton {
 全局变量 和 单例 有什么优劣势？
 
 全局变量一般在进程初始化时候赋值，没有lazy load；且运行过程中变量值可能改变
+在多线程情况下访问需要手动加锁
+
+
+### 工厂模式 Factory
+
+golang 中 为什么抛弃了  constructor? 
+java 里的 Factory Pattern, Builder Patter 还需要吗？
 
 
 
 ## 结构型
 
 - facade
-- delegate
+- delegate(proxy)
+- adapter 适配器 
+- bridge 桥接
+
 
 ## 行为型
 
 - observer
+- template 模板方法
 - command(命令)
-- 模板方法
-- 状态机
+- chain 责任链
+- state 状态机
+
 
