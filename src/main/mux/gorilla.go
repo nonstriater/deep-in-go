@@ -60,7 +60,7 @@ func run(){
 		return nil
 	})
 
-	r.Use(TestMiddleware)
+	r.Use(TestMiddleware,TestMiddleware2)
 	log.Fatal(http.ListenAndServe(":3001", r))
 }
 
@@ -91,5 +91,13 @@ func TestMiddleware(next http.Handler) http.Handler {
 	})
 }
 
+func TestMiddleware2(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		// Do stuff here
+		fmt.Println("middleware2 print: ", r.RequestURI)
+		// Call the next handler, which can be another middleware in the chain, or the final handler.
+		next.ServeHTTP(w, r)
+	})
+}
 
 
