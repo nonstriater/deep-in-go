@@ -96,6 +96,7 @@ java 里的 Factory Pattern, Builder Patter 还需要吗？
 
 - observer
 - template 模板方法
+- strategy 策略
 - command(命令)
 - chain 责任链
 - state 状态机
