@@ -1,8 +1,6 @@
 package main
 
-import (
-	"golang.org/x/tools/go/ssa/interp/testdata/src/fmt"
-)
+import "fmt"
 
 func test(x int) (func(),func())  {
 	return func() {
@@ -33,6 +31,6 @@ func getApis() []string {
 }
 
 func startIPC(apis []string) {
-	fmt.Printf("%v", apis)
+	fmt.Println("%v", apis)
 }
 

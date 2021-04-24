@@ -1,4 +1,4 @@
-package main
+package _interface
 
 type int1 interface {
 	funcA()
