@@ -1,4 +1,4 @@
-package algo
+package main
 
 func Solution(s string) int {
 	li := 0
