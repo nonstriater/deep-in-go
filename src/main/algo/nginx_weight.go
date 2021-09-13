@@ -1,6 +1,9 @@
 package main
 
 import "fmt"
+/**
+Nginx 平滑的基于权重的轮训算法
+ */
 
 func main() {
 	nodes := []*Node{
